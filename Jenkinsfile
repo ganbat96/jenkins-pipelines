@@ -4,6 +4,8 @@ pipeline {
     stage('BuildUtil') {
       steps {
         build(job: 'maven/build.artlab.util', wait: true)
+        sh 'echo \'ganbbat\''
+        echo 'hey'
       }
     }
 
